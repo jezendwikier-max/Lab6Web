@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Workshop</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Pendaftaran Workshop IT</h1>
+        <p id="pesanHeader">Silakan isi formulir di bawah ini dengan benar.</p>
+
+        <form id="formPendaftaran" novalidate>
+            <!-- Input Nama -->
+            <div class="form-group">
+                <label for="nama">Nama Lengkap</label>
+                <input id="nama" name="nama" type="text" maxlength="40" placeholder="Masukkan nama lengkap...">
+                <small class="info-karakter">Sisa karakter: <span id="jumlahKarakter">40</span></small>
+            </div>
+
+            <!-- Input Email -->
+            <div class="form-group">
+                <label for="email">Alamat Email</label>
+                <input id="email" name="email" type="email" placeholder="nama@email.com">
+            </div>
+
+            <!-- Pilihan Sesi (Select) -->
+            <div class="form-group">
+                <label for="sesiWorkshop">Pilihan Sesi Workshop</label>
+                <select id="sesiWorkshop" name="sesiWorkshop">
+                    <option value="">-- Pilih Sesi --</option>
+                    <option value="pagi">Sesi Pagi (09.00 - 11.30 WIB)</option>
+                    <option value="siang">Sesi Siang (13.00 - 15.30 WIB)</option>
+                    <option value="sore">Sesi Sore (16.00 - 18.30 WIB)</option>
+                </select>
+            </div>
+
+            <!-- Tombol Aksi -->
+            <div class="button-group">
+                <button type="submit" id="tombolKirim">Daftar Sekarang</button>
+                <button type="button" id="tombolReset">Reset Form</button>
+            </div>
+        </form>
+
+        <!-- Pesan Sukses / Error -->
+        <p id="pesanForm" aria-live="polite"></p>
+    </div>
+</body>
+
+</html>

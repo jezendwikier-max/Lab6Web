@@ -1,0 +1,131 @@
+/* Pengaturan Umum & Responsif */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+#pesanHeader {
+    font-size: 0.9rem;
+    color: #687386;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+.info-karakter {
+    font-size: 0.8rem;
+    color: #7f8c8d;
+    margin-top: 4px;
+    text-align: right;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#tombolKirim {
+    background-color: #27ae60;
+    color: white;
+}
+
+#tombolKirim:hover {
+    background-color: #219653;
+}
+
+#tombolReset {
+    background-color: #e74c3c;
+    color: white;
+}
+
+#tombolReset:hover {
+    background-color: #c0392b;
+}
+
+/* Pesan Notifikasi Form */
+#pesanForm {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.error {
+    background-color: #fadbd8;
+    color: #900c3f;
+    border: 1px solid #f5b7b1;
+}
+
+.sukses {
+    background-color: #d4efdf;
+    color: #145a32;
+    border: 1px solid #a9dfbf;
+}
